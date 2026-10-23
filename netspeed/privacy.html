@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NetSpeed — Privacy Policy</title>
+<style>
+  :root { --ink: #F4F6FA; --muted: #A3ACBB; --bg: #07080C; --card: #11131A; --accent: #10B981; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 17px/1.6 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-size: clamp(28px, 6vw, 40px); margin: 0 0 4px; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  .muted { color: var(--muted); }
+  a { color: #6EE7B7; }
+  ul { padding-left: 22px; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  td, th { border: 1px solid #232836; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--card); }
+  code { background: var(--card); padding: 1px 5px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>NetSpeed privacy policy</h1>
+  <p class="muted">Last updated: 24 October 2026 · App: NetSpeed Indicator (com.netspeed.indicator) · Developer: Lazycode (Soumya Ranjan Sethy) · Contact: sethy.soumyaranjan@gmail.com</p>
+
+  <p>NetSpeed shows your live internet speed. We built it so that nothing about you ever leaves your phone.</p>
+
+  <h2>What we collect</h2>
+  <p><strong>Nothing.</strong> NetSpeed does not collect, upload, share or sell any personal or device data. The app has <strong>no internet permission</strong> (<code>android.permission.INTERNET</code> is not requested), so Android does not let it open a network connection at all. There is no server, account, sign-in, analytics, advertising or tracking code.</p>
+
+  <h2>What the app reads</h2>
+  <ul>
+    <li><strong>Total bytes sent and received by the device</strong>, from Android's <code>TrafficStats</code> counters, once per second, to show the speed. These are byte totals only: no websites, app names or content.</li>
+    <li><strong>Connection type</strong> (Wi-Fi or mobile data) and <strong>signal level</strong>, to label the reading.</li>
+  </ul>
+  <p>NetSpeed does not read your browsing, messages, files, contacts, location, clipboard or the contents of any traffic.</p>
+
+  <h2>What stays on your phone</h2>
+  <ul>
+    <li>Your settings: display mode, scene and theme, colours, fonts, bubble size and position, speed-tier names and thresholds, daily data cap.</li>
+    <li>Your usage totals: today, lifetime, and a rolling 30-day history.</li>
+  </ul>
+  <p>These are saved in the app's private storage on your device. Uninstalling NetSpeed deletes them.</p>
+
+  <h2>Fonts</h2>
+  <p>Some on-screen typefaces are provided by the Google Play services font provider already on your phone. NetSpeed asks that on-device service for a font by name; it sends no personal or usage data, and NetSpeed itself still makes no network connection.</p>
+
+  <h2>Permissions</h2>
+  <table>
+    <tr><th>Permission</th><th>Why</th></tr>
+    <tr><td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_SPECIAL_USE</code></td><td>Keeps one lightweight service running so the speed stays live. In status-bar mode Android shows a notification, which is where the live icon is drawn.</td></tr>
+    <tr><td><code>POST_NOTIFICATIONS</code></td><td>Shows that notification (status-bar mode only).</td></tr>
+    <tr><td><code>SYSTEM_ALERT_WINDOW</code></td><td>Draws the optional floating speed bubble next to the camera. Decline it and the app works in status-bar mode.</td></tr>
+    <tr><td><code>ACCESS_NETWORK_STATE</code>, <code>ACCESS_WIFI_STATE</code></td><td>Wi-Fi vs mobile data, and the Wi-Fi signal level.</td></tr>
+    <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Restarts the meter after a reboot.</td></tr>
+    <tr><td><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code></td><td>Only if you choose to exempt the app from battery limits, so the reading isn't stopped. Never requested automatically.</td></tr>
+  </table>
+
+  <h2>Ads, analytics and accounts</h2>
+  <p>NetSpeed shows no ads, contains no analytics, crash-reporting or tracking SDKs, needs no account, and has no in-app purchases.</p>
+
+  <h2>Children</h2>
+  <p>NetSpeed is suitable for all ages and collects no data from anyone, including children.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be published at this address with a new date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions: <a href="mailto:sethy.soumyaranjan@gmail.com">sethy.soumyaranjan@gmail.com</a></p>
+</main>
+</body>
+</html>
