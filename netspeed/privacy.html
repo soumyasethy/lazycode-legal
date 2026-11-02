@@ -23,12 +23,15 @@
 <body>
 <main>
   <h1>NetSpeed privacy policy</h1>
-  <p class="muted">Last updated: 24 October 2026 · App: NetSpeed Indicator (com.netspeed.indicator) · Developer: Lazycode (Soumya Ranjan Sethy) · Contact: sethy.soumyaranjan@gmail.com · Website: <a href="https://netspeed.lazycode.ai/">netspeed.lazycode.ai</a></p>
+  <p class="muted">Last updated: 2 November 2026 (speed test) · App: NetSpeed Indicator (com.netspeed.indicator) · Developer: Lazycode (Soumya Ranjan Sethy) · Contact: sethy.soumyaranjan@gmail.com · Website: <a href="https://netspeed.lazycode.ai/">netspeed.lazycode.ai</a></p>
 
-  <p>NetSpeed shows your live internet speed. We built it so that nothing about you ever leaves your phone.</p>
+  <p>NetSpeed shows your live internet speed and, when you ask, tests it. We built it so that nothing about you ever leaves your phone.</p>
 
   <h2>What we collect</h2>
-  <p><strong>Nothing.</strong> NetSpeed does not collect, upload, share or sell any personal or device data. The app has <strong>no internet permission</strong> (<code>android.permission.INTERNET</code> is not requested), so Android does not let it open a network connection at all. There is no server, account, sign-in, analytics, advertising or tracking code.</p>
+  <p><strong>Nothing.</strong> NetSpeed does not collect, upload, share or sell any personal or device data. We have no server, account, sign-in, analytics, advertising or tracking code.</p>
+  <p><strong>The speed meter</strong> reads your phone's own counters and never uses the network.</p>
+  <p><strong>The speed test</strong> (since version 1.4.0) is the only thing that uses the internet (<code>android.permission.INTERNET</code>), and only while a test you started is running. It downloads and uploads throw-away test data to and from Cloudflare's public speed-test service (<code>speed.cloudflare.com</code>) and measures how fast that goes. Like any website, Cloudflare sees your IP address and the test traffic while the test runs; its handling is covered by the <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare privacy policy</a>. NetSpeed sends nothing else: no identifiers, no usage data, no results. Your last 10 results (speeds, ping, time and server city) are kept only on your phone.</p>
+  <p>A test uses about 50–300 MB of data depending on your speed; on mobile data the app asks before it starts.</p>
 
   <h2>What the app reads</h2>
   <ul>
@@ -45,7 +48,7 @@
   <p>These are saved in the app's private storage on your device. Uninstalling NetSpeed deletes them.</p>
 
   <h2>Fonts</h2>
-  <p>Some on-screen typefaces are provided by the Google Play services font provider already on your phone. NetSpeed asks that on-device service for a font by name; it sends no personal or usage data, and NetSpeed itself still makes no network connection.</p>
+  <p>Some on-screen typefaces are provided by the Google Play services font provider already on your phone. NetSpeed asks that on-device service for a font by name; it sends no personal or usage data.</p>
 
   <h2>Permissions</h2>
   <table>
@@ -53,7 +56,8 @@
     <tr><td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_SPECIAL_USE</code></td><td>Keeps one lightweight service running so the speed stays live. In status-bar mode Android shows a notification, which is where the live icon is drawn.</td></tr>
     <tr><td><code>POST_NOTIFICATIONS</code></td><td>Shows that notification (status-bar mode only).</td></tr>
     <tr><td><code>SYSTEM_ALERT_WINDOW</code></td><td>Draws the optional floating speed bubble next to the camera. Decline it and the app works in status-bar mode.</td></tr>
-    <tr><td><code>ACCESS_NETWORK_STATE</code>, <code>ACCESS_WIFI_STATE</code></td><td>Wi-Fi vs mobile data, and the Wi-Fi signal level.</td></tr>
+    <tr><td><code>INTERNET</code></td><td>Only for the speed test you start (test data to and from Cloudflare's speed-test service). The meter never uses it.</td></tr>
+    <tr><td><code>ACCESS_NETWORK_STATE</code>, <code>ACCESS_WIFI_STATE</code></td><td>Wi-Fi vs mobile data, the Wi-Fi signal level, and a warning before a speed test on mobile data.</td></tr>
     <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Restarts the meter after a reboot.</td></tr>
     <tr><td><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code></td><td>Only if you choose to exempt the app from battery limits, so the reading isn't stopped. Never requested automatically.</td></tr>
   </table>
