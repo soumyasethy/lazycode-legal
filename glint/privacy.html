@@ -139,7 +139,7 @@ footer{padding:56px 0 40px;border-top:1px solid var(--line);margin-top:24px}
 .crumbs a{color:var(--ink2)}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://lazycode.ai/#org","name":"Lazycode","url":"https://lazycode.ai/","logo":"https://lazycode.ai/favicon.svg","email":"soumya@lazycode.ai","founder":{"@id":"https://lazycode.ai/#me"},"sameAs":["https://play.google.com/store/apps/developer?id=Soumya+Ranjan+Sethy"]},{"@type":"WebPage","@id":"https://soumyasethy.github.io/lazycode-legal/glint/privacy.html#page","url":"https://soumyasethy.github.io/lazycode-legal/glint/privacy.html","name":"Glint privacy policy","description":"How Glint uses notification access to light the screen edge without storing or sending notification text.","inLanguage":"en","dateModified":"2026-11-02","publisher":{"@id":"https://lazycode.ai/#org"},"isPartOf":{"@type":"WebSite","name":"Lazycode legal","url":"https://soumyasethy.github.io/lazycode-legal/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Lazycode legal","item":"https://soumyasethy.github.io/lazycode-legal/"},{"@type":"ListItem","position":2,"name":"Glint privacy policy","item":"https://soumyasethy.github.io/lazycode-legal/glint/privacy.html"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://lazycode.ai/#org","name":"Lazycode","url":"https://lazycode.ai/","logo":"https://lazycode.ai/favicon.svg","email":"soumya@lazycode.ai","founder":{"@id":"https://lazycode.ai/#me"},"sameAs":["https://play.google.com/store/apps/developer?id=Soumya+Ranjan+Sethy"]},{"@type":"WebPage","@id":"https://soumyasethy.github.io/lazycode-legal/glint/privacy.html#page","url":"https://soumyasethy.github.io/lazycode-legal/glint/privacy.html","name":"Glint privacy policy","description":"How Glint uses notification access to light the screen edge without storing or sending notification text.","inLanguage":"en","dateModified":"2026-11-04","publisher":{"@id":"https://lazycode.ai/#org"},"isPartOf":{"@type":"WebSite","name":"Lazycode legal","url":"https://soumyasethy.github.io/lazycode-legal/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Lazycode legal","item":"https://soumyasethy.github.io/lazycode-legal/"},{"@type":"ListItem","position":2,"name":"Glint privacy policy","item":"https://soumyasethy.github.io/lazycode-legal/glint/privacy.html"}]}]}</script>
 
 <script defer src="https://lazycode.ai/analytics.js" data-site="legal" data-app="glint"></script>
 </head>
@@ -148,9 +148,9 @@ footer{padding:56px 0 40px;border-top:1px solid var(--line);margin-top:24px}
 <header class="wrap"><div class="nav"><a class="brand" href="https://lazycode.ai/"><img src="https://lazycode.ai/favicon.svg" alt="" width="36" height="36">Lazycode legal<span>by Lazycode</span></a>
 <nav aria-label="Main"><a href="../">All policies</a><a class=opt href="../developer/">Developer</a></nav></div></header><main id="main" class="wrap"><article class="prose"><p class="crumbs"><a href="../">Lazycode legal</a> › Glint privacy policy</p>
 <h1>Glint privacy policy</h1>
-  <p class="muted">Last updated: 2 November 2026 (version 1.1) · App: Glint (ai.lazycode.glint) · Developer: Lazycode</p>
+  <p class="muted">Last updated: 4 November 2026 (version 1.2) · App: Glint (ai.lazycode.glint) · Developer: Lazycode</p>
 
-  <p>Glint puts a small coloured light on the edge of your screen when a notification arrives from an app you chose. To do that it reads those notifications on your phone. It never stores the text of a notification and never sends it anywhere. There are no ads and no account.</p>
+  <p>Glint puts a small coloured light on the edge of your screen when a notification arrives from an app you chose. To do that it reads those notifications on your phone. It never stores the text of a notification and never sends it anywhere. There are no ads, and an account is optional.</p>
 
   <h2>Notification access</h2>
   <p>Glint asks for Android's <strong>notification access</strong> so it can see when a notification arrives. It reads notifications only from the apps you add in Glint. For those apps it uses the app name, the sender, the message text and the time, and only on your phone, to do three things: draw the light, decide its colour (for example a colour for one person or one word you set), and show the peek panel with the notification when you swipe the light.</p>
@@ -163,14 +163,18 @@ footer{padding:56px 0 40px;border-top:1px solid var(--line);margin-top:24px}
   <p>If you turn on <strong>Quiet while watching</strong>, Glint asks for usage access so it can tell which app is open and hold the lights while you watch a video or play a game. This is optional and asked for only when you open that feature. The name of the open app is used on the spot and is not stored or sent anywhere.</p>
 
   <h2>Analytics and crash reports</h2>
-  <p>Glint uses Google Firebase Analytics and Firebase Crashlytics to learn which features are used and to fix crashes. They collect:</p>
+  <p>Glint uses Google Firebase Analytics, Firebase Crashlytics and Firebase Performance Monitoring to learn which features are used, fix crashes and measure how fast Glint starts and draws. They collect:</p>
   <ul>
-    <li><strong>App usage events</strong>, such as finishing setup, adding a light, opening the peek panel or viewing the Pro screen.</li>
+    <li><strong>App usage events</strong>, such as finishing setup, adding a light, opening the peek panel, viewing the Pro screen, answering a permission request or choosing whether to sign in.</li>
+    <li><strong>Which screens and dialogs you open</strong> and how long you stay on a step.</li>
+    <li><strong>Which Home switches you turn on or off.</strong></li>
+    <li><strong>Daily counts</strong>, in ranges such as 1 to 10, of how many lights came on and how often the lock screen woke, with no app, person or message.</li>
     <li><strong>Crash logs</strong> when the app fails.</li>
-    <li><strong>Device model and Android version.</strong></li>
+    <li><strong>Performance data</strong>, such as start and rendering time.</li>
+    <li><strong>Device model, Android version and approximate country or region</strong> from your network address.</li>
     <li><strong>An app instance ID</strong>, a random identifier for this installation of Glint.</li>
   </ul>
-  <p>They never include notification content, senders or keywords. You can turn analytics and crash reports off at any time in <strong>Settings &gt; Help improve Glint</strong>. This data is processed by Google under <a href="https://firebase.google.com/support/privacy">Firebase's privacy terms</a>. We never sell it and never use it for ads.</p>
+  <p>They never include notification content, senders or keywords. One switch controls all three: <strong>Home &gt; Help improve Glint &gt; Share crash reports and usage</strong>. It is on by default, except in the EEA, UK and Switzerland, where Glint asks once and collects nothing until you say yes. This data is processed by Google under <a href="https://firebase.google.com/support/privacy">Firebase's privacy terms</a>. We never sell it and never use it for ads.</p>
 
   <h2>This website</h2>
   <p>The Glint website at glint.lazycode.ai uses Google Analytics to count visits and to report page errors. It does not collect notification data, and it has no account or sign-in.</p>
@@ -178,11 +182,22 @@ footer{padding:56px 0 40px;border-top:1px solid var(--line);margin-top:24px}
   <h2>Purchases</h2>
   <p>Glint Pro is available as a monthly or yearly subscription, or as a one-time lifetime purchase. Payment, renewal and cancellation are handled entirely by Google Play Billing under <a href="https://policies.google.com/privacy">Google's privacy policy</a>. We never see your payment details; Glint only learns which plan is active. You can cancel a subscription any time in Google Play.</p>
 
-  <h2>Ads and accounts</h2>
-  <p>Glint shows no ads and has no account or sign-in.</p>
+  <h2>Optional Google sign-in</h2>
+  <ul>
+    <li>Signing in is optional: every feature works the same without it. It is offered on first launch, once after this update, and in <strong>Home &gt; Account</strong>.</li>
+    <li>If you sign in, Firebase Authentication keeps your Google name, email address, a user ID, and when the account was created and last used. We use them to run your account, for support, to contact you about problems such as crashes, for internal reporting and analysis, and for email from Lazycode as below. Our own systems can read them for these purposes. We never sell them.</li>
+    <li>Usage and crash reports carry a one-way code made from your user ID, not your name or email. We can match it to your account, for example to contact you about a crash.</li>
+    <li>Email: outside the EEA, UK and Switzerland, signing in means you agree to email about your account and news from Lazycode; switch it off any time in <strong>Home &gt; Account</strong>. Inside them, Glint asks Yes or No and sends nothing without a Yes. The choice, date and wording version are stored in Google Firestore.</li>
+    <li>If you link Pro to your Google account, we store the Play product, the date and the Play order id with your account so we can find your purchase if you need help. We never see payment details. Pro itself unlocks through your Play account.</li>
+    <li>Your notifications, senders, keywords, lights, rules and settings are never sent or synced, with or without an account.</li>
+    <li>Delete: <strong>Home &gt; Account &gt; Delete account</strong>, email <a href="mailto:soumya@lazycode.ai">soumya@lazycode.ai</a>, or <a href="https://glint.lazycode.ai/delete-account/">glint.lazycode.ai/delete-account/</a>.</li>
+  </ul>
+
+  <h2>Ads</h2>
+  <p>Glint shows no ads.</p>
 
   <h2>Deleting your data</h2>
-  <p>Your Glint settings live in the app's private storage on your phone, and uninstalling Glint deletes them. You can withdraw notification access, "Display over other apps" and usage access at any time in Android's settings. To ask about data from analytics or crash reports, email us.</p>
+  <p>Your Glint settings live in the app's private storage on your phone, and uninstalling Glint deletes them. You can withdraw notification access, "Display over other apps" and usage access at any time in Android's settings. To ask about data from analytics or crash reports, email us. If you signed in, delete your account in the app as described above. Uninstalling Glint does not delete an account.</p>
 
   <h2>Children</h2>
   <p>Glint is not directed at children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has used Glint, email us and we will help.</p>
